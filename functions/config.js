@@ -33,7 +33,7 @@ export const HTTP_PORT = 5000;
 // const __dirname = path.dirname(__filename);
 //const disco = path.join(__dirname, '..', '..', '..', '..', '..', '/media/wni/Disco3\ 6TB');
 //const disco = '/mnt/mnthd1';
-export const imgFTP_path = path.join(__dirname, '..', 'img_ftp');
+export const imgFTP_path = path.join(__dirname, '..', 'assets');
 
 
 /*console.log(fileName)
