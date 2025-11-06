@@ -88,8 +88,13 @@ export async function genPassages(
     onStatusUpdateCallback // <-- ALTERADO: Recebe o novo callback
 ) {
     startRun(); 
+    const passagesPerSecond_cal = (6.797 * passagesPerSecond)/(6.536 - passagesPerSecond);
 
-    const timeInterval = (1 / passagesPerSecond) * 1000;
+
+    let timeInterval = parseInt((1 / passagesPerSecond_cal) * 1000);
+    if(timeInterval < 0){
+        timeInterval = 0;
+    }
     const totalDuration = seconds * 1000;
     const startTime = Date.now();
 
